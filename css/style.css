@@ -1,48 +1,106 @@
-html, body {
-  overflow-x: hidden;
-  width: 100%;
+.main {
+  background-image: url('../images/bmt-micro-vendors-login-background-min.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(15px);
+  opacity: .5;
   height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  position: fixed;
   }
 
-.row {
-  margin: 0px;
+h4 {
+  margin-bottom: 1.3rem;
   }
 
-form {
-  margin: 0 !important;
-  margin-block-end: 0em !important;
-}
-
-input, button:focus, select {
-  outline: none !important;
+h4, .forgot-password a {
+  color: #195a7c;
   }
 
-[type=button] {
-  -webkit-appearance: none;
+.main, .footer {
+  width: 100%;
   }
 
-a {
-  text-decoration: none !important;
+.content-area {
+  height: 95vh;
+  min-height: 600px;
+  padding-top: 100px;
   }
 
-p, label {
-  color: #707070;
-  }
-
-input, input::placeholder, input::-moz-placeholder, input:-ms-input-placeholder {
-  font-size: .8rem;
+.login-box {
+  -webkit-box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 2rem 3rem;
   }
 
 input {
-  border: 1px solid #a9a9a9;
-  border-radius: 3px;
-  padding: .25rem .5rem;
+  background: rgba(255, 255, 255, 0.4);
   }
 
-input:focus {
-  border: 1px solid #195a7c;
+.template-input {
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 4px 7px;
+  min-width: 380px;
   }
 
-input, input::placeholder, label, input:-ms-input-placeholder, input::-moz-placeholder {
+.template-input, .copyright {
+  font-size: .9rem;
+  }
+
+label {
+  margin-bottom: .1rem;
+  text-align: left;
+  }
+
+h4, p, label, .template-input, .login-btn button, .signup a {
   letter-spacing: .5px;
+  }
+
+.template-input:focus {
+  border-color: #195a7c;
+  }
+
+.username, .password {
+  margin-bottom: 1rem;
+  }
+
+.forgot-password {
+  margin-bottom: 10px;
+  }
+
+.forgot-password a {
+  font-size: .85rem;
+  letter-spacing: .4px;
+  }
+
+.login-btn button {
+  background: #ef9a00;
+  padding: 5px 10px;
+  border-radius: 8px;
+  color: #ffffff;
+  min-width: 105px;
+  }
+
+.login-btn button, .login-btn button:active {
+  border: none;
+  }
+
+.login-btn button:active {
+  transform: translateY(2px);
+  transition: .3s ease;
+  outline: none;
+  }
+
+.signup a, .copyright, p, label {
+  color: #555555;
+  }
+
+.footer {
+  height: 25px;
   }
